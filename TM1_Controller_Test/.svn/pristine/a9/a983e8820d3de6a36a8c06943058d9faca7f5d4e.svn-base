@@ -1,0 +1,140 @@
+﻿*  RTC:  Verify RTC$ config is set.
+> config get RTC$
+                RTC$ = [0x00003900,0xFFFFFFF3,0x00000033]
+
+*  Capture application close via X
+
+*  Convert heater test to pwm measurements, instead of 100% on/off
+
+*  Turn result window red on failure and green on pass?
+
+*  test h2scan power on / off control, ie heater status
+
+*  Add RS485 test
+
+*  Add specs to SpecTable, keep in app for non db usage.
+
+*  LEAK TEST add leak rate column to display and remove timestamp
+
+*  Hovering over test button pops up description of test, add in line comments
+
+*  help button
+
+*  loop test button
+
+*  When linking H2SCAN or CONTROLLER_BOARD check if linked to a different TM1 and invalidate if found
+
+*  Installer
+
+*  capture spec max / min to database
+
+*  Don't allow multiple instances of running TM1_Controller_test to select the same USB-1208LS
+
+*  Don't allow multiple instances of running TM1_Controller_test's to use the same comports.
+
+*  Save session based on USB-1208LS device.
+
+*  SUB_ASSEMBLY, VER_DATE:  Check drift against controller board start date.
+    add set date to database.  set initially by controller board test.  
+
+*  Check tach pump during thermals testing * cnts per sec.
+
+
+
+
+DONE
+*  Add test retry
+
+*  Add Assembly level, don't show test buttons or enable start button until assembly level selected.
+
+*  Add TMCOM1 test once working
+
+*  Verify entries fields based on what tests are enabled.
+
+*  Add enable all / disable all tests
+
+*  Add 4/20 test once 4/20 working
+
+*  Getting config fails when run after reboot.
+
+*  Test_THERMAL not stopping data logging on failure.
+
+*  Add config defaults set / verification ( after power cycle )
+
+*  Add USB thumb drive test ( test during h2scan update )
+
+*  Capture leak and heater data tables to network location
+
+*  Copy sensor fw file to thumb drive.
+
+*  Verify files exported from TM1 to thumb drive.
+
+*  Sub assembly:  H2SCAN, verify status 8001 and pcbsensor matches analogbd temp.
+
+*  Add 1856D com port to entry check
+
+*  Verify TMCOM1 & 1856 com ports unique when entered.
+
+*  Refresh com port select box with updated serial port list.
+
+*  Validate TM1 SN format
+   MMMNNFFYYWWNNNN
+   MMM = TM1
+   NN configuration (01)
+   FF mfg code (01= BPLG Beaverton)
+   YYWW year, ww
+   NNNN uniuqe serial #
+
+*  TM1 sub assembly:  If can't find FTDI with TM1_SN use board SN.
+
+*  Program board SN in config when fw bug fix in place.  Check board serial # during sub-assembly
+   Only program board.serial_number if controller board test has passed in production or service modes.
+
+*  create link table
+	At controller board test:  board SN written to config.
+	At sub assembly test:  board SN & H2SCAN SN linked in db to TM1 SN.	
+	
+*  Add data logging, with option to disable for case where test run at CM without SQL server 
+
+*  Add spec differntiate for usage ie AUX1, AUX2
+
+*  Log test details on failure, ie Gen3DC
+
+*  Validate Controller Board Serial Number on entry during sub assembly test.
+
+*  Not able to find USB com port on first boot of new FTDI
+
+*  Test_BOOT:   When the test is run the 2nd time it re-uses the SerialPort because is not nothing, set to nothing when test completes?
+
+*  GetPwmStatus, return false if all items not found or retry
+
+*  GetTecStatus,  return false if all items not found for both tec's or retry.
+
+*  Add date/time verification after power cycle
+
+*  Resolve intermittent USB serial port issue, have added resetting of port after locating with ftdi lib and
+   then wait 10s to open
+
+*  Not able to find device programming FDTI SN for the 1st time.
+
+*  Recall prev COM port selections.
+
+*  Add versioning
+
+*  check prev test (prod mode)
+
+*  Disable combo box scrolling
+
+*  Add SN to popup title bars to identify uut.
+
+*  color code app border or body and pop up based on usb-1208 selection.
+
+*  Center pop ups above uut app.
+
+*  Add SN to popup title bars to identify uut.
+
+*  color code app border or body and pop up based on usb-1208 selection.
+
+*  display comport on form
+
+*  Center pop ups above uut app.

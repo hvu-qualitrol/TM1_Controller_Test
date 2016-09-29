@@ -1,0 +1,37 @@
+Version 1.0.0.0
+	Initial version passed on from Steve to Christian.
+
+Version 1.0.0.1
+	Added NTP Class for checking the RTC.
+
+Version 1.1.0.2
+	Added Publishing to the project.
+
+Version 1.1.0.3
+	Added this file.
+
+Version 1.1.0.4 - 1.1.0.11
+	Bumped version numbers to validate the Upgrade detection of the publish function.
+
+Version 1.1.0.13
+	Increased the timeout for the open port to talk to the Freq. Counter 
+
+Version 1.1.0.14
+	Increased the thread sleep for the Freq. Counter response time.
+
+Version 1.1.0.15
+	Changed the date format to 24 hour UTC.
+
+Version 1.1.0.16 - 1.1.0.18
+	Changing the H2 Scan version information to test release.
+
+Version 1.1.0.19 - 1.1.0.21
+	Added a pump shutoff command. Removed the NTP Server for clock verification.
+
+Version 1.1.0.22 - 1.1.0.23
+	Added support to handle the new firmware version but have not increased the firmware number.
+
+Version 1.1.0.25
+	Used CyclePort in RTC & TM1Comport to fix the serial port communication issues.
+	Changed the flow and specs of the oil block heater test so it can operate in the fan-on environment.
+	Calculate the limit of the VerDate test based on the RTC cal time stamp.

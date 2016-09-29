@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+  </configSections>
+  <connectionStrings>
+    <add name="OCP.My.MySettings.Serveron_OperationConnectionString"
+      connectionString="Data Source=localhost;Initial Catalog=&quot;Serveron Operation&quot;User ID=SQLOCP.PDX;Password=M4@+BV5$^1"
+      providerName="System.Data.SqlClient" />
+  </connectionStrings>
+  <appSettings>
+    <!--   User application and configured property settings go here.-->
+    <!--   Example: <add key="settingName" value="settingValue"/> -->
+    <add key="SqlPacketSize" value="4096" />
+    <add key="SqlUserId" value="SQLOCP.PDX" />
+    <!-- Change the SqlServerName when you wish to change databases
+			 US-PDX-DB-02   = Mfg Database
+			 SQLTESTSVR = Testing Server
+		 -->
+    <add key="SqlServerName" value="QPDXSQL83" />
+    <!-- <add key="SqlServerName" value="localhost" /> -->
+    <add key="SqlPersistSecurity" value="True" />
+    <!-- Change the SqlDataBaseName when you wish to change databases
+			 Serveron Operation		    = Mfg Database
+			 Serveron Operation Sandbox = Testing Server
+		 -->
+    <add key="SqlDataBaseName" value="Serveron Operation" />
+    <add key="SqlUserPassword" value="M4@+BV5$^1" />
+    <!-- Change the DrivePath value when you wish to change where the data is stored
+			 \\Pdx-data-01\Serveron\Operations\Production\Operations Data\   									  = Mfg Production Data
+			 \\Pdx-data-01\Serveron\Engineering\WebDelivery\Operations\Operations Control Panel\Operations Data\  = Test Data
+			 \\Pdx-data-01\Serveron\Operations\Production\Operations Data\Beta\									  = Beta Location for test data
+		-->
+    <add key="DrivePath" value="\\QPDXFPS40\Data\Operations\Production\Operations Data\TM1\" />
+    <!-- <add key="DrivePath" value="\Operations\Production\TM1\" /> -->
+    <add key="HardwareVersion0" value="0x0" />
+    <add key="AssemblyVersion0" value="0x0" />
+    <add key="HardwareVersion1" value="0x1" />
+    <add key="AssemblyVersion1" value="0x1" />
+    <add key="HardwareVersion2" value="0x2" />
+    <add key="AssemblyVersion2" value="0x2" />
+    <add key="TM1FirmwareVersion" value="1.4.5590" />
+    <!-- The under test H2Sensor firmware version-->
+    <add key="H2ScanFirmwareVersion" value="3.956B" />
+    <add key="H2ScanMatchedFirmwareVersion" value="396" />
+    <add key="H2ScanFirmwareCheckSum" value="6CF2" />
+
+    <add key="ClientSettingsProvider.ServiceUri" value="" />
+  </appSettings>
+  <system.web>
+    <membership defaultProvider="ClientAuthenticationMembershipProvider">
+      <providers>
+        <add name="ClientAuthenticationMembershipProvider" type="System.Web.ClientServices.Providers.ClientFormsAuthenticationMembershipProvider, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" />
+      </providers>
+    </membership>
+    <roleManager defaultProvider="ClientRoleProvider" enabled="true">
+      <providers>
+        <add name="ClientRoleProvider" type="System.Web.ClientServices.Providers.ClientRoleProvider, System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" serviceUri="" cacheTimeout="86400" />
+      </providers>
+    </roleManager>
+  </system.web>
+</configuration>

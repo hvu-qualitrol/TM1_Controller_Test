@@ -1,0 +1,12 @@
+1) Double Click the My Project item in the Solution Explorer.
+2) Click the Publish tab.
+3) Note the Version Number information.
+4) Click the Updates Button.
+5) Change the Specified Min. Version Number to Match the Verison number information.
+6) Open the AssemblyInfo.vb file.
+7) Change the version information to the latest version.
+8) Save the project.
+9) Double Click the My Project item in the Solution Explorer.
+10) Click Publish Now.
+11) Save the project again.
+12) Commit to SVN the released version.
